@@ -3,8 +3,8 @@ import React from 'react'
 const MovieCard = ({movie:
   {title,vote_average,poster_path,release_date,original_language,id}}) => {
   return (
-    // <div>
-    // <a rel='stylesheet' href={`https://www.themoviedb.org/movie/${id}-${title}`} target='blank'>
+    // <>
+    <a rel='stylesheet' href={`https://www.themoviedb.org/movie/${id}-${title}`} target='blank'>
     <div className="movie-card">
       <img src={poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : 'no-movie.png'} alt={title}/>
 
@@ -27,8 +27,7 @@ const MovieCard = ({movie:
 
 
 
-
-    //  </a></div>
+  </a>
   )
 }
 
